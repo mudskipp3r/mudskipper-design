@@ -6,21 +6,29 @@ function PrimaryNavigation() {
         <nav
             style={{
                 display: 'flex',
+                justifyContent: 'center',
                 backgroundColor: 'whitesmoke',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                minHeight: '48px',
                 height: '100%',
-                padding: '0px 5vh',
             }}
         >
-            <brand>
-                <strong>Mudskipper.</strong>design
-            </brand>
-            <HorizontalStack gap="24">
-                <div>Projects</div>
-                <button class="button">Say hello!</button>
-            </HorizontalStack>
+            <div
+                style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    width: '60vw',
+                    height: '100%',
+                    minHeight: '48px',
+                }}
+            >
+                <brand>
+                    <strong>Mudskipper.</strong>design
+                </brand>
+                <HorizontalStack gap="24">
+                    <div>Projects</div>
+                    <button class="button">Say hello!</button>
+                </HorizontalStack>
+            </div>
         </nav>
     );
 }

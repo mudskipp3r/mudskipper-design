@@ -8,6 +8,7 @@ const StyledButton = styled.button`
     color: white;
     border-radius: 8px;
     min-height: 48px;
+    padding: 0px 16px;
 `;
 
 function Button(props) {

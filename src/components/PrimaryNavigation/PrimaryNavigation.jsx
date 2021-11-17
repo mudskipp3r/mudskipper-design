@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button';
 import HorizontalStack from '../Layout/HorizontalStack';
 
 function PrimaryNavigation() {
@@ -19,6 +20,7 @@ function PrimaryNavigation() {
                     width: '60vw',
                     height: '100%',
                     minHeight: '48px',
+                    padding: '8px 0',
                 }}
             >
                 <brand>
@@ -26,7 +28,7 @@ function PrimaryNavigation() {
                 </brand>
                 <HorizontalStack gap="24">
                     <div>Projects</div>
-                    <button class="button">Say hello!</button>
+                    <Button class="button">Say hello!</Button>
                 </HorizontalStack>
             </div>
         </nav>

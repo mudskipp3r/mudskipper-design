@@ -1,6 +1,5 @@
-import Appa from './images/Appa.jpg';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ProjectScreen from './screens/ProjectScreen';
 

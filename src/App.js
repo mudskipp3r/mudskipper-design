@@ -7,8 +7,8 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route exact path="/" component={<HomeScreen />} />
-                <Route path="/HIA" component={<ProjectScreen />} />
+                <Route path="/" element={<HomeScreen />} />
+                <Route path="/HIA" element={<ProjectScreen />} />
             </Routes>
         </Router>
     );

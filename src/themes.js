@@ -1,6 +1,6 @@
 export const lightTheme = {
-    color: '#000',
-    backgroundColor: '#fff8e8',
+    color: '#2A3139',
+    backgroundColor: '#fff6e3',
     primaryNavigation: {
         backgroundColor: '#ffedc3',
     },
@@ -12,7 +12,7 @@ export const lightTheme = {
     },
 };
 export const darkTheme = {
-    color: '#fff6e3',
+    color: '#fff',
     backgroundColor: '#1f2238',
     primaryNavigation: {
         backgroundColor: '#333b4c',

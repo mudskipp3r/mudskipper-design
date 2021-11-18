@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProjectScreen from './screens/ProjectScreen';
 import PrimaryNavigation from './components/PrimaryNavigation/PrimaryNavigation';

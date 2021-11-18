@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { darkTheme, lightTheme } from './themes';
 import SplashScreen from './screens/SplashScreen';
 import styled from '@emotion/styled';
+import Footer from './components/Footer/Footer';
 
 const themes = {
     light: lightTheme,
@@ -47,6 +48,7 @@ function App() {
                             <Route path="/HIA" element={<ProjectScreen />} />
                         </Routes>
                     </main>
+                    <Footer />
                 </Router>
             </StyledGrid>
         </ThemeProvider>
@@ -55,8 +57,8 @@ function App() {
 
 const StyledGrid = styled.div`
     display: grid;
-    grid-template-rows: minmax(48px, 10vh) 90vh;
-    grid-template-areas: 'nav' 'main';
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-areas: 'nav' 'main' 'ft';
 `;
 
 export default App;

@@ -15,12 +15,12 @@ function PrimaryNavigation(props) {
                     <div>Projects</div>
                     <Button class="button">Say hello!</Button>
                 </HorizontalStack>
-                <DarkModeToggle
+                {/* <DarkModeToggle
                     onChange={props.onThemeToggle}
                     isDarkMode={props.theme === 'dark' ? true : false}
                     size={48}
                     speed={3}
-                />
+                /> */}
             </StyledNavContainer>
         </StyledNav>
     );
@@ -39,7 +39,6 @@ const StyledNavContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 60vw;
-    height: 100%;
     min-height: 48px;
     padding: 8px 0;
 

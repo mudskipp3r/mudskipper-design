@@ -6,6 +6,8 @@ import PrimaryNavigation from './components/PrimaryNavigation/PrimaryNavigation'
 import { ThemeProvider } from '@emotion/react';
 import { useState } from 'react';
 import { darkTheme, lightTheme } from './themes';
+import SplashScreen from './screens/SplashScreen';
+import styled from '@emotion/styled';
 
 const themes = {
     light: lightTheme,
@@ -26,18 +28,37 @@ function App() {
 
     return (
         <ThemeProvider theme={themes[theme]}>
-            <Router>
-                <PrimaryNavigation
-                    theme={theme}
-                    onThemeToggle={handleThemeToggle}
-                />
-                <Routes>
-                    <Route path="/" element={<HomeScreen theme={theme} />} />
-                    <Route path="/HIA" element={<ProjectScreen />} />
-                </Routes>
-            </Router>
+            <StyledGrid>
+                <Router>
+                    <PrimaryNavigation
+                        style={{ gridArea: 'nav' }}
+                        theme={theme}
+                        onThemeToggle={handleThemeToggle}
+                    />
+                    <main style={{ gridArea: 'main' }}>
+                        <Routes>
+                            <Route
+                                path="/"
+                                element={
+                                    <SplashScreen
+                                        theme={theme}
+                                        onThemeToggle={handleThemeToggle}
+                                    />
+                                }
+                            />
+                            <Route path="/HIA" element={<ProjectScreen />} />
+                        </Routes>
+                    </main>
+                </Router>
+            </StyledGrid>
         </ThemeProvider>
     );
 }
+
+const StyledGrid = styled.div`
+    display: grid;
+    grid-template-rows: minmax(48px, 10vh) 90vh;
+    grid-template-areas: 'nav' 'main';
+`;
 
 export default App;

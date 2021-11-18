@@ -25,9 +25,9 @@ const StyledNavContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 48px;
     padding: 8px 0;
     box-sizing: border-box;
+    height: 100%;
 `;
 
 export default PrimaryNavigation;

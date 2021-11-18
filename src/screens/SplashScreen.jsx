@@ -43,11 +43,6 @@ function SplashScreen(props) {
                         </StyledToggle>
                     </div>
                     <img
-                        style={{
-                            width: '176px',
-                            height: '247.32px',
-                            transform: 'scaleX(-1)',
-                        }}
                         src={
                             props.theme === 'light'
                                 ? LightThemeDawson
@@ -79,6 +74,25 @@ const StyledAnnouncement = styled.div`
     padding-left: 24px;
     padding-right: 16px;
     width: 480px;
+
+    img {
+        width: 176px;
+        height: 247.32px;
+        transform: scaleX(-1);
+    }
+
+    @media (max-width: 480px) {
+        width: 240px;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 392px;
+        text-align: center;
+
+        img {
+            width: 120px;
+            height: auto;
+        }
+    }
 `;
 
 const StyledToggle = styled.div`
@@ -93,6 +107,11 @@ const StyledToggle = styled.div`
     width: fit-content;
     border-radius: 8px;
     font-size: 16px;
+
+    @media (max-width: 480px) {
+        justify-content: center;
+        width: auto;
+    }
 `;
 
 export default SplashScreen;

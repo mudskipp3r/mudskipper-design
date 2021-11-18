@@ -1,6 +1,21 @@
 import React from 'react';
 import Button from '../Button/Button';
 import HorizontalStack from '../Layout/HorizontalStack';
+import styled from '@emotion/styled';
+
+const StyledNavContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    height: 100%;
+    min-height: 48px;
+    padding: 8px 0;
+
+    @media (max-width: 480px) {
+        width: 95vw;
+    }
+`;
 
 function PrimaryNavigation() {
     return (
@@ -12,17 +27,7 @@ function PrimaryNavigation() {
                 height: '100%',
             }}
         >
-            <div
-                style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    width: '60vw',
-                    height: '100%',
-                    minHeight: '48px',
-                    padding: '8px 0',
-                }}
-            >
+            <StyledNavContainer>
                 <brand>
                     <strong>Mudskipper.</strong>design
                 </brand>
@@ -30,7 +35,7 @@ function PrimaryNavigation() {
                     <div>Projects</div>
                     <Button class="button">Say hello!</Button>
                 </HorizontalStack>
-            </div>
+            </StyledNavContainer>
         </nav>
     );
 }

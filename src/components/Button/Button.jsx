@@ -9,6 +9,7 @@ const StyledButton = styled.button`
     border-radius: 8px;
     min-height: 48px;
     padding: 0px 16px;
+    white-space: nowrap;
 `;
 
 function Button(props) {

@@ -47,9 +47,6 @@ function SplashScreen(props) {
                             width: '176px',
                             height: '247.32px',
                             transform: 'scaleX(-1)',
-                            // position: 'absolute',
-                            // top: '0',
-                            // right: '-15%',
                         }}
                         src={
                             props.theme === 'light'

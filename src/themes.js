@@ -1,6 +1,6 @@
 export const lightTheme = {
     color: '#000',
-    backgroundColor: '#fff',
+    backgroundColor: '#fff8e8',
     primaryNavigation: {
         backgroundColor: '#ffedc3',
     },

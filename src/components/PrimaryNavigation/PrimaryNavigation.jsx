@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '../Button/Button';
 import HorizontalStack from '../Layout/HorizontalStack';
 import styled from '@emotion/styled';
-import { DarkModeToggle } from 'react-dark-mode-toggle-2';
 
 function PrimaryNavigation(props) {
     return (
@@ -15,12 +14,6 @@ function PrimaryNavigation(props) {
                     <div>Projects</div>
                     <Button class="button">Say hello!</Button>
                 </HorizontalStack>
-                {/* <DarkModeToggle
-                    onChange={props.onThemeToggle}
-                    isDarkMode={props.theme === 'dark' ? true : false}
-                    size={48}
-                    speed={3}
-                /> */}
             </StyledNavContainer>
         </StyledNav>
     );

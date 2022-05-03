@@ -7,6 +7,7 @@ import SplashScreen from './screens/SplashScreen';
 import styled from '@emotion/styled';
 import Footer from './components/Footer/Footer';
 import TestScreen from './screens/TestScreen';
+import SidebarNavigation from './components/PrimaryNavigation/SidebarNavigation';
 
 const GlobalStyles = css`
     body {
@@ -39,11 +40,7 @@ function App() {
             <Global styles={GlobalStyles} />
             <StyledGrid>
                 <Router>
-                    <PrimaryNavigation
-                        style={{ gridArea: 'nav' }}
-                        theme={theme}
-                        onThemeToggle={handleThemeToggle}
-                    />
+                    <SidebarNavigation style={{ gridArea: 'nav' }} />
                     <main style={{ gridArea: 'main' }}>
                         <Routes>
                             <Route
@@ -70,8 +67,8 @@ function App() {
 
 const StyledGrid = styled.div`
     display: grid;
-    grid-template-rows: 65px 1fr 56px;
-    grid-template-areas: 'nav' 'main' 'ft';
+    grid-template-columns: 320px 1fr;
+    grid-template-areas: 'nav main';
     height: 100vh;
 `;
 

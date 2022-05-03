@@ -6,6 +6,7 @@ import { darkTheme, lightTheme } from './themes';
 import SplashScreen from './screens/SplashScreen';
 import styled from '@emotion/styled';
 import Footer from './components/Footer/Footer';
+import TestScreen from './screens/TestScreen';
 
 const GlobalStyles = css`
     body {
@@ -53,6 +54,10 @@ function App() {
                                         onThemeToggle={handleThemeToggle}
                                     />
                                 }
+                            />
+                            <Route
+                                path="/Test"
+                                element={<TestScreen theme={theme} />}
                             />
                         </Routes>
                     </main>

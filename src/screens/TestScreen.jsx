@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
-import React, { useEffect, useState } from 'react';
-import HorizontalStack from '../components/Layout/HorizontalStack';
+import React, { useState } from 'react';
 import braveAdmin01 from '../images/brave-admin_01.png';
 import braveAdmin02 from '../images/brave-admin_02.png';
 import { useSwipeable } from 'react-swipeable';

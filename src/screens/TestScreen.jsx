@@ -48,21 +48,21 @@ function TestScreen(props) {
                             <img
                                 style={{ width: '100%', height: 'auto' }}
                                 src={braveAdmin01}
-                                alt
+                                alt="admin 1"
                             />
                         </StyledCarouselItem>
                         <StyledCarouselItem backgroundColor="yellow">
                             <img
                                 style={{ width: '100%', height: 'auto' }}
                                 src={braveAdmin02}
-                                alt
+                                alt="admin 2"
                             />
                         </StyledCarouselItem>
                         <StyledCarouselItem backgroundColor="yellow">
                             <img
                                 style={{ width: '100%', height: 'auto' }}
                                 src={braveAdmin02}
-                                alt
+                                alt="admin 3"
                             />
                         </StyledCarouselItem>
                     </StyledCarouselInner>

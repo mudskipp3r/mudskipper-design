@@ -26,9 +26,7 @@ function SplashScreen(props) {
                     >
                         <div>
                             <h1 style={{ margin: 0 }}>Howdy</h1>
-                            <p>
-                                It's great to see you, but you're a bit early!
-                            </p>
+                            <p>Testing text to see if deploy worked</p>
                         </div>
                         <StyledToggle style={{}}>
                             Switch theme

@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ProjectScreen from './screens/ProjectScreen';
 import PrimaryNavigation from './components/PrimaryNavigation/PrimaryNavigation';
 import { Global, css, ThemeProvider } from '@emotion/react';
 import { useState } from 'react';
@@ -55,7 +54,6 @@ function App() {
                                     />
                                 }
                             />
-                            <Route path="/HIA" element={<ProjectScreen />} />
                         </Routes>
                     </main>
                     <Footer />
@@ -67,8 +65,9 @@ function App() {
 
 const StyledGrid = styled.div`
     display: grid;
-    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-rows: 65px 1fr 56px;
     grid-template-areas: 'nav' 'main' 'ft';
+    height: 100vh;
 `;
 
 export default App;

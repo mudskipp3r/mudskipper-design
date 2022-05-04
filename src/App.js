@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import PrimaryNavigation from './components/PrimaryNavigation/PrimaryNavigation';
 import { Global, css, ThemeProvider } from '@emotion/react';
 import { useState } from 'react';
 import { darkTheme, lightTheme } from './themes';
@@ -58,7 +57,6 @@ function App() {
                             />
                         </Routes>
                     </main>
-                    <Footer />
                 </Router>
             </StyledGrid>
         </ThemeProvider>

@@ -6,7 +6,7 @@ function ProjectScreen() {
     return (
         <StyledWrapper>
             <StyledContainer>
-                Projects
+                <h2>Projects</h2>
                 <StyledGrid>
                     <ProjectCard title="Project 1" type="Design" />
                     <ProjectCard title="Project 2" type="Design" />
@@ -27,7 +27,7 @@ const StyledWrapper = styled.div`
 const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     background-color: #f0f1f3;
     padding: 4rem;
     height: 100%;

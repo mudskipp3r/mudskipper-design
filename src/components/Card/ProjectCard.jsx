@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Badge from '../Badge/Badge';
+import { Link } from 'react-router-dom';
 
 function ProjectCard(props) {
-    const { title, type } = props;
+    const { title, type, targetURL } = props;
     return (
-        <StyledCard>
+        <StyledCard to={targetURL}>
             <StyledPlaceholder />
             <StyledCardBody>
                 <div>
@@ -20,13 +21,14 @@ function ProjectCard(props) {
     );
 }
 
-const StyledCard = styled.div`
+const StyledCard = styled(Link)`
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 0.5rem;
     overflow: hidden;
     transition: 0.3s ease-out;
+    text-decoration: none;
 
     :hover {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LightThemeDawson from '../../images/light_dawson_coffee_smile.svg';
 
 function SidebarNavigation() {
@@ -10,9 +11,15 @@ function SidebarNavigation() {
                     <strong>Mudskipper</strong>.design
                 </StyledBrand>
                 <StyledUl>
-                    <li>Projects</li>
-                    <li>About me</li>
-                    <li>Contact</li>
+                    <li>
+                        <Link to="/">Projects</Link>
+                    </li>
+                    <li>
+                        <Link to="/">About me</Link>
+                    </li>
+                    <li>
+                        <Link to="/">Contact</Link>
+                    </li>
                 </StyledUl>
             </div>
             <div>
@@ -56,6 +63,10 @@ const StyledUl = styled.ul`
     li {
         text-decoration: none;
         padding: 0.5rem 0;
+
+        a {
+            text-decoration: none;
+        }
     }
 `;
 

@@ -2,18 +2,27 @@ import styled from '@emotion/styled';
 import React from 'react';
 import ProjectCard from '../components/Card/ProjectCard';
 
-function ProjectScreen() {
+function ProjectListScreen() {
     return (
         <StyledWrapper>
             <StyledContainer>
                 <h2>Projects</h2>
                 <StyledGrid>
-                    <ProjectCard title="Project 1" type="Design" />
-                    <ProjectCard title="Project 2" type="Design" />
-                    <ProjectCard title="Project 3" type="Design" />
-                    <ProjectCard title="Project 4" type="Design" />
-                    <ProjectCard title="Project 5" type="Design" />
-                    <ProjectCard title="Project 6" type="Design" />
+                    <ProjectCard
+                        title="Project 1"
+                        type="Design"
+                        targetURL="/project1"
+                    />
+                    <ProjectCard
+                        title="Project 2"
+                        type="Design"
+                        targetURL="/project2"
+                    />
+                    <ProjectCard
+                        title="Project 3"
+                        type="Design"
+                        targetURL="/project3"
+                    />
                 </StyledGrid>
             </StyledContainer>
         </StyledWrapper>
@@ -41,4 +50,4 @@ const StyledGrid = styled.div`
     gap: 2.5rem;
 `;
 
-export default ProjectScreen;
+export default ProjectListScreen;

@@ -4,14 +4,19 @@ import { useState } from 'react';
 import { darkTheme, lightTheme } from './themes';
 import styled from '@emotion/styled';
 import SidebarNavigation from './components/PrimaryNavigation/SidebarNavigation';
-import ProjectScreen from './screens/ProjectScreen';
+import ProjectListScreen from './screens/ProjectListScreen';
+import Project1Screen from './screens/Project1Screen';
+import Project2Screen from './screens/Project2Screen';
+import Project3Screen from './screens/Project3Screen';
 
 const GlobalStyles = css`
+    * {
+        box-sizing: border-box;
+    }
+
     body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-            Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        padding: 0px;
-        margin: 0px;
+        margin: 0;
+        font-family: CeraRoundProRegular;
     }
 `;
 
@@ -41,12 +46,25 @@ function App() {
                     <main style={{ gridArea: 'main' }}>
                         <Routes>
                             <Route
+                                exact
                                 path="/"
                                 element={
-                                    <ProjectScreen
+                                    <ProjectListScreen
                                         onThemeToggle={handleThemeToggle}
                                     />
                                 }
+                            />
+                            <Route
+                                path="/project1"
+                                element={<Project1Screen />}
+                            />
+                            <Route
+                                path="/project2"
+                                element={<Project2Screen />}
+                            />
+                            <Route
+                                path="/project3"
+                                element={<Project3Screen />}
                             />
                         </Routes>
                     </main>

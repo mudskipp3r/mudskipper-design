@@ -75,7 +75,7 @@ const StyledCaption = styled.div`
     background-color: #f7f6f9;
     border-radius: 1rem;
     position: relative;
-    padding: 2rem;
+    padding: 1.5rem;
     margin-bottom: 1rem;
 
     span {

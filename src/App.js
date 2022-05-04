@@ -17,6 +17,7 @@ const GlobalStyles = css`
     body {
         margin: 0;
         font-family: CeraRoundProRegular;
+        line-height: 125%;
     }
 `;
 

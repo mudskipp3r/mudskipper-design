@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Badge from '../Badge/Badge';
 import { Link } from 'react-router-dom';
+import { Caption, H5 } from '../Typography/Typography';
 
 function ProjectCard(props) {
     const { title, type, targetURL } = props;
@@ -10,10 +11,8 @@ function ProjectCard(props) {
             <StyledPlaceholder />
             <StyledCardBody>
                 <div>
-                    <div>
-                        <strong>{title}</strong>
-                    </div>
-                    <div>{type}</div>
+                    <H5>{title}</H5>
+                    <Caption>{type}</Caption>
                 </div>
                 <Badge label="Badge" />
             </StyledCardBody>

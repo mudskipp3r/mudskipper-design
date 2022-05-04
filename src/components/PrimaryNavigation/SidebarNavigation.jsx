@@ -2,13 +2,14 @@ import styled from '@emotion/styled';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LightThemeDawson from '../../images/light_dawson_coffee_smile.svg';
+import { Strong } from '../Typography/Typography';
 
 function SidebarNavigation() {
     return (
         <StyledNav>
             <div>
                 <StyledBrand>
-                    <strong>Mudskipper</strong>.design
+                    <Strong>Mudskipper</Strong>.design
                 </StyledBrand>
                 <StyledUl>
                     <li>

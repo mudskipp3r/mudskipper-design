@@ -1,12 +1,13 @@
 import styled from '@emotion/styled';
 import React from 'react';
 import ProjectCard from '../components/Card/ProjectCard';
+import { H1 } from '../components/Typography/Typography';
 
 function ProjectListScreen() {
     return (
         <StyledWrapper>
             <StyledContainer>
-                <h2>Projects</h2>
+                <H1>Projects</H1>
                 <StyledGrid>
                     <ProjectCard
                         title="Project 1"

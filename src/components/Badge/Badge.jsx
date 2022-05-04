@@ -7,11 +7,16 @@ function Badge(props) {
 }
 
 const StyledBadge = styled.span`
-    padding: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    padding: 0 0.5rem;
     color: #fff;
     background-color: #266cd4;
     width: fit-content;
     border-radius: 0.5rem;
+    font-size: 0.875rem;
 `;
 
 export default Badge;

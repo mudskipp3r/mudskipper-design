@@ -28,6 +28,7 @@ const StyledCard = styled(Link)`
     overflow: hidden;
     transition: 0.3s ease-out;
     text-decoration: none;
+    color: black;
 
     :hover {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { darkTheme, lightTheme } from './themes';
 import SplashScreen from './screens/SplashScreen';
 import styled from '@emotion/styled';
-import Footer from './components/Footer/Footer';
 import TestScreen from './screens/TestScreen';
 import SidebarNavigation from './components/PrimaryNavigation/SidebarNavigation';
 

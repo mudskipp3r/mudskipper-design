@@ -31,14 +31,14 @@ const StyledNav = styled.nav`
     display: flex;
     flex-direction: column;
     width: 320px;
-    padding: 0 3rem;
+    padding: 0 2rem;
     box-sizing: border-box;
     justify-content: space-between;
     overflow: hidden;
 
     img {
         display: flex;
-        width: 75%;
+        width: 60%;
         margin-bottom: -1rem;
         margin-left: auto;
     }

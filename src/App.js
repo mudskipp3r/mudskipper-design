@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Global, css, ThemeProvider } from '@emotion/react';
 import { useState } from 'react';
 import { darkTheme, lightTheme } from './themes';
-import SplashScreen from './screens/SplashScreen';
 import styled from '@emotion/styled';
 import SidebarNavigation from './components/PrimaryNavigation/SidebarNavigation';
 import ProjectScreen from './screens/ProjectScreen';
@@ -44,15 +43,10 @@ function App() {
                             <Route
                                 path="/"
                                 element={
-                                    <SplashScreen
-                                        theme={theme}
+                                    <ProjectScreen
                                         onThemeToggle={handleThemeToggle}
                                     />
                                 }
-                            />
-                            <Route
-                                path="/projects"
-                                element={<ProjectScreen />}
                             />
                         </Routes>
                     </main>

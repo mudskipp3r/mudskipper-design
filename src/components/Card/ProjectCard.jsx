@@ -1,8 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { keyframes } from '@emotion/react';
 import Badge from '../Badge/Badge';
 import { Link } from 'react-router-dom';
 import { Caption, H5 } from '../Typography/Typography';
+import { fadeInUp } from 'react-animations';
+
+const entryAnimation = keyframes`${fadeInUp}`;
 
 function ProjectCard(props) {
     const { title, type, targetURL } = props;
@@ -21,19 +25,20 @@ function ProjectCard(props) {
 }
 
 const StyledCard = styled(Link)`
+    animation: 1s ${entryAnimation};
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 0.5rem;
     overflow: hidden;
-    transition: 0.3s ease-out;
+    transition: 0.2s ease-in-out;
     text-decoration: none;
     color: black;
 
     :hover {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         transform: translate(0, -0.25rem);
-        transition: 0.3s ease-out;
+        transition: 0.2s ease-in-out;
     }
 `;
 

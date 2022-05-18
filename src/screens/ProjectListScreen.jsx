@@ -24,6 +24,16 @@ function ProjectListScreen() {
                         type="Design"
                         targetURL="/project3"
                     />
+                    <ProjectCard
+                        title="Project 4"
+                        type="Design"
+                        targetURL="/project3"
+                    />
+                    <ProjectCard
+                        title="Project 5"
+                        type="Design"
+                        targetURL="/project3"
+                    />
                 </StyledGrid>
             </StyledContainer>
         </StyledWrapper>
@@ -47,7 +57,7 @@ const StyledContainer = styled.div`
 
 const StyledGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
     gap: 2.5rem;
 `;
 
